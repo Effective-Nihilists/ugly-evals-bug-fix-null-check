@@ -1,0 +1,17 @@
+{
+  "name": "bug-fix-null-check",
+  "kind": "bug-fix",
+  "turns": [
+    "There is a failing test in src/user.test.ts. Read the test and the source file, then fix the bug so the test passes. Do not modify the test file."
+  ],
+  "budget": {
+    "maxTurns": 12,
+    "maxCostUsd": 0.75,
+    "timeoutMs": 150000
+  },
+  "successCriteria": "The test in src/user.test.ts passes. The fix must be in src/user.ts — adding a null/undefined guard to greetUser so calling it with a user missing a name does not throw. The test file itself is not modified.",
+  "tags": [
+    "ts",
+    "vitest"
+  ]
+}
