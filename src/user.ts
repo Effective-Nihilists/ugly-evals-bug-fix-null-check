@@ -4,5 +4,6 @@ export interface User {
 }
 
 export function greetUser(user: User): string {
-  return `Hello, ${user.name.toUpperCase()}!`;
+  const displayName = user.name ?? 'STRANGER';
+  return `Hello, ${displayName.toUpperCase()}!`;
 }
