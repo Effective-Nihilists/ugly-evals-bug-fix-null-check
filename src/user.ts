@@ -4,5 +4,5 @@ export interface User {
 }
 
 export function greetUser(user: User): string {
-  return `Hello, ${user.name.toUpperCase()}!`;
+  return `Hello, ${(user.name ?? 'stranger').toUpperCase()}!`;
 }
